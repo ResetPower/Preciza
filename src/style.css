@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .m-hoverable {
+    @apply bg-black bg-opacity-0 hover:bg-opacity-5 active:bg-opacity-10 cursor-pointer transition-colors;
+  }
+  .m-hoverable-active {
+    @apply bg-opacity-5;
+  }
+}
+
+.p-dark {
+  background-color: #2f2f2f;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.m-drag {
+  -webkit-app-region: drag;
+}
